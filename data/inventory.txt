@@ -1,0 +1,114 @@
+[
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d1",  // Dole Bananas
+    "quantity": 150,
+    "storeLocation": "Toronto",
+    "batchNumber": "F2468",
+    "expiryDate": "2025-05-20T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d2",  // Apples Gala 1kg
+    "quantity": 200,
+    "storeLocation": "Toronto",
+    "batchNumber": "G1357",
+    "expiryDate": "2025-08-10T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d3",  // Carrots 1kg
+    "quantity": 180,
+    "storeLocation": "Toronto",
+    "batchNumber": "H9876",
+    "expiryDate": "2025-07-15T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d4",  // Tomato 1kg
+    "quantity": 250,
+    "storeLocation": "Toronto",
+    "batchNumber": "I2468",
+    "expiryDate": "2025-09-05T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d5",  // Almonds 500g
+    "quantity": 100,
+    "storeLocation": "Toronto",
+    "batchNumber": "J1357",
+    "expiryDate": "2026-02-28T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d6",  // Milk 1L
+    "quantity": 120,
+    "storeLocation": "Toronto",
+    "batchNumber": "K2468",
+    "expiryDate": "2025-03-25T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d7",  // Eggs 12 pcs
+    "quantity": 80,
+    "storeLocation": "Toronto",
+    "batchNumber": "L9876",
+    "expiryDate": "2025-03-01T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4ce",  // Nestle Pure Life Water 1L
+    "quantity": 180,
+    "storeLocation": "Toronto",
+    "batchNumber": "M1357",
+    "expiryDate": "2026-03-30T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4cf",  // Oreo Cookies
+    "quantity": 90,
+    "storeLocation": "Toronto",
+    "batchNumber": "N2468",
+    "expiryDate": "2025-06-01T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d0",  // Lay's Chips 150g
+    "quantity": 200,
+    "storeLocation": "Toronto",
+    "batchNumber": "O1357",
+    "expiryDate": "2025-10-20T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0be95b232f97d19567656",  // Coca-Cola 500ml
+    "quantity": 220,
+    "storeLocation": "Toronto",
+    "batchNumber": "P9876",
+    "expiryDate": "2026-01-10T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4cd",  // Pepsi 500ml
+    "quantity": 170,
+    "storeLocation": "Toronto",
+    "batchNumber": "Q2468",
+    "expiryDate": "2025-12-15T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d1",  // Dole Bananas
+    "quantity": 200,
+    "storeLocation": "Toronto",
+    "batchNumber": "R1357",
+    "expiryDate": "2025-06-10T00:00:00.000Z",
+    "status": "In Stock"
+  },
+  {
+    "productId": "67e0f2d7b80c4e0ddc6fd4d2",  // Apples Gala 1kg
+    "quantity": 160,
+    "storeLocation": "Toronto",
+    "batchNumber": "S9876",
+    "expiryDate": "2025-07-30T00:00:00.000Z",
+    "status": "In Stock"
+  }
+]
