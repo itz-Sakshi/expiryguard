@@ -122,7 +122,7 @@ const DonatePage = () => {
           height: "300px",
           width: "100%",
         }}
-        className="text-[0px] mt-14"
+        className="absolute text-[0px] mt-14 z-1000"
       ></div>
     </div>
   );
