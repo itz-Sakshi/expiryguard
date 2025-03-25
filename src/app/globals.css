@@ -119,3 +119,60 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+/* Container Styling */
+.popup-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 400px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  margin: auto;
+  margin-top: 14px;
+
+}
+
+/* Paragraph Styling */
+.popup-content p {
+  color: #333;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+/* Strong Text */
+.popup-content strong {
+  color: #000;
+}
+
+/* Website Link Styling */
+.popup-content a {
+  color: #333;
+  text-decoration: none;
+}
+
+.popup-content a:hover {
+  text-decoration: underline;
+}
+
+/* Make Donation Button Styling */
+.make-donation-button {
+  display: inline-block;
+  margin-top: 16px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  font-size: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.make-donation-button:hover {
+  background-color: #0056b3;
+}
+
+
