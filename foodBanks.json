@@ -1,0 +1,84 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.523, 43.6379]
+        },
+        "properties": {
+          "Name": "Daily Bread Food Bank",
+          "Phone Number": "416-203-0050",
+          "Website": "dailybread.ca",
+          "Hours of Operation": "Mon-Fri: 10 AM - 4 PM"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.4635, 43.6699]
+        },
+        "properties": {
+          "Name": "North York Harvest",
+          "Phone Number": "416-635-7771",
+          "Website": "northyorkharvest.com",
+          "Hours of Operation": "Mon-Fri: 9 AM - 5 PM"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.7216, 43.589]
+        },
+        "properties": {
+          "Name": "Mississauga Food Bank",
+          "Phone Number": "905-270-5589",
+          "Website": "themississaugafoodbank.org",
+          "Hours of Operation": "Mon-Sat: 10 AM - 3 PM"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.5755, 43.63]
+        },
+        "properties": {
+          "Name": "Second Harvest",
+          "Phone Number": "416-408-2594",
+          "Website": "secondharvest.ca",
+          "Hours of Operation": "Mon-Fri: 8 AM - 5 PM"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.8664, 43.2565]
+        },
+        "properties": {
+          "Name": "Hamilton Food Share",
+          "Phone Number": "905-664-9065",
+          "Website": "hamiltonfoodshare.org",
+          "Hours of Operation": "Mon-Fri: 9 AM - 4 PM"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.6285, 45.4015]
+        },
+        "properties": {
+          "Name": "Ottawa Food Bank",
+          "Phone Number": "613-745-7001",
+          "Website": "ottawafoodbank.ca",
+          "Hours of Operation": "Mon-Fri: 8 AM - 5 PM"
+        }
+      }
+    ]
+  }
+  
