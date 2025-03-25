@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import React from "react";
-import { AuroraBackground } from "@/components/ui/aurora-background";
 
 import { useForm } from "react-hook-form"; // For form validation
 import { useState, useEffect } from "react";
@@ -45,6 +44,13 @@ const AddDelivery = () => {
   const { setValue } = form;
 
   const debouncedSearch = useDebounceCallback(setProductName, 10);
+
+  const fieldStyles = {
+    color: "white",
+    border: "1px solid white",
+    padding: "10px",
+    borderRadius: "16px",
+  };
 
   useEffect(() => {
     const getProducts = async () => {
@@ -110,7 +116,7 @@ const AddDelivery = () => {
   };
 
   return (
-    <AuroraBackground>
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -139,6 +145,7 @@ const AddDelivery = () => {
                         field.onChange(e);
                         debouncedSearch(e.target.value);
                       }}
+                      style={fieldStyles}
                     />
                     <FormMessage />
                   </FormItem>
@@ -146,8 +153,9 @@ const AddDelivery = () => {
               />
               {productList.length > 0 &&
                 !showCreateProductForm &&
-                showProductList && productName && (
-                  <ul className="absolute top-full left-0 w-full bg-white border shadow-lg">
+                showProductList &&
+                productName && (
+                  <ul className="absolute top-full left-0 w-full bg-gray-900 border shadow-lg">
                     {productList
                       .filter((product) =>
                         product.productName
@@ -174,7 +182,12 @@ const AddDelivery = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Expiry Date</FormLabel>
-                  <Input type="date" {...field} name="expiryDate" />
+                  <Input
+                    type="date"
+                    {...field}
+                    name="expiryDate"
+                    style={fieldStyles}
+                  />
                   <FormMessage />
                 </FormItem>
               )}
@@ -187,7 +200,12 @@ const AddDelivery = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Batch Number</FormLabel>
-                  <Input type="string" {...field} name="batchNumber" />
+                  <Input
+                    type="string"
+                    {...field}
+                    name="batchNumber"
+                    style={fieldStyles}
+                  />
                   <FormMessage />
                 </FormItem>
               )}
@@ -200,7 +218,12 @@ const AddDelivery = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Quantity</FormLabel>
-                  <Input type="number" {...field} name="quantity" />
+                  <Input
+                    type="number"
+                    {...field}
+                    name="quantity"
+                    style={fieldStyles}
+                  />
                   <FormMessage />
                 </FormItem>
               )}
@@ -213,7 +236,12 @@ const AddDelivery = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Store Location</FormLabel>
-                  <Input type="string" {...field} name="storeLocation" />
+                  <Input
+                    type="string"
+                    {...field}
+                    name="storeLocation"
+                    style={fieldStyles}
+                  />
                   <FormMessage />
                 </FormItem>
               )}
@@ -223,7 +251,7 @@ const AddDelivery = () => {
             <div className="flex items-center justify-center">
               <Button
                 type="submit"
-                className="bg-blue-500 text-white py-2 px-4 rounded m-auto mt-2"
+                className="bg-gray-400 text-black py-2 px-4 rounded-[16px] m-auto mt-2 hover:bg-white hover:text-black"
               >
                 Add Delivery
               </Button>
@@ -235,9 +263,9 @@ const AddDelivery = () => {
               <Button
                 type="button"
                 onClick={handleAddNewProduct}
-                className="bg-green-500 text-white py-2 px-4 rounded m-0 inline"
+                className="bg-transparent text-white py-2 px-4 rounded-[16px] m-0 inline hover:bg-white hover:text-black"
               >
-                Add New Product
+                Add New Product 🔗
               </Button>
             </div>
           </form>
@@ -265,7 +293,7 @@ const AddDelivery = () => {
           </div>
         )}
       </motion.div>
-    </AuroraBackground>
+    </div>
   );
 };
 
