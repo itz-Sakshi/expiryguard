@@ -73,35 +73,63 @@ const ActionsPage = () => {
   };
 
   return (
-    <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-15">
+    <div className="p-8 flex flex-wrap justify-center gap-9 mt-15">
       {suggestions.map((item, index) => (
-        <Card key={index} className="shadow-lg rounded-xl">
+        <Card key={index} className="shadow-lg rounded-[16px] border border-gray-300">
           <CardHeader>
             <CardTitle className="flex items-center text-xl justify-center gap-2 h-20 text-red-500">
               <AlertCircle className="text-yellow-500 mb-6" /> {item.suggestion}
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <Image src={item.imageUrl} width={100} height={100} alt={item.productName} className="w-40 h-40 object-cover mb-4 rounded-lg" />
-            <p><strong>Product:</strong> {item.productName}</p>
-            <p><strong>Quantity:</strong> {item.quantity}</p>
-            <p><strong>Store Location:</strong> {item.storeLocation}</p>
-            <p><strong>Expiry Date:</strong> {item.expiryDate}</p>
+            <Image
+              src={item.imageUrl}
+              width={100}
+              height={100}
+              alt={item.productName}
+              className="w-40 h-40 object-cover mb-4 rounded-lg"
+            />
+            <p>
+              <strong>Product:</strong> {item.productName}
+            </p>
+            <p>
+              <strong>Quantity:</strong> {item.quantity}
+            </p>
+            <p>
+              <strong>Store Location:</strong> {item.storeLocation}
+            </p>
+            <p>
+              <strong>Expiry Date:</strong> {item.expiryDate}
+            </p>
             <div className="flex gap-4 mt-4">
-              <Button variant="outline" className="flex items-center gap-2" onClick={() => handleNavigate('discount')}>
+              <Button
+                variant="outline"
+                className="flex items-center gap-2"
+                onClick={() => handleNavigate('discount')}
+              >
                 <Tag /> Discount
               </Button>
-              <Button variant="destructive" className="flex items-center gap-2" onClick={() => handleNavigate('donate')}>
+              <Button
+                variant="destructive"
+                className="flex items-center gap-2"
+                onClick={() => handleNavigate('donate')}
+              >
                 <Gift /> Donate
               </Button>
-              <Button variant="default" className="flex items-center gap-2" onClick={() => handleIgnore(index)}>
+              <Button
+                variant="default"
+                className="flex items-center gap-2"
+                onClick={() => handleIgnore(index)}
+              >
                 <ImageDownIcon /> Ignore
               </Button>
             </div>
           </CardContent>
         </Card>
       ))}
-      {suggestions.length === 0 && <p className="text-center col-span-full">No suggestions available</p>}
+      {suggestions.length === 0 && (
+        <p className="text-center col-span-full">No suggestions available</p>
+      )}
     </div>
   );
 };
