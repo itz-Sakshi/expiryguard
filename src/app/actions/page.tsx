@@ -73,7 +73,7 @@ const ActionsPage = () => {
   };
 
   return (
-    <div className="p-8 flex flex-wrap justify-center gap-9 mt-15">
+    <div className="p-8 flex flex-wrap justify-center gap-9 mt-15 z-100">
       {suggestions.map((item, index) => (
         <Card key={index} className="shadow-lg rounded-[16px] border border-gray-300">
           <CardHeader>
