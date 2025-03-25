@@ -73,7 +73,7 @@ const ActionsPage = () => {
   };
 
   return (
-    <div className="absolute p-8 flex flex-wrap justify-center gap-9 mt-15 z-1000">
+    <div className="p-8 flex flex-wrap justify-center gap-9 mt-15 ">
       {suggestions.map((item, index) => (
         <Card key={index} className="shadow-lg rounded-[16px] border border-gray-300">
           <CardHeader>
@@ -104,21 +104,21 @@ const ActionsPage = () => {
             <div className="flex gap-4 mt-4">
               <Button
                 variant="outline"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 z-1000 cursor-pointer"
                 onClick={() => handleNavigate('discount')}
               >
                 <Tag /> Discount
               </Button>
               <Button
                 variant="destructive"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 z-1000 cursor-pointer"
                 onClick={() => handleNavigate('donate')}
               >
                 <Gift /> Donate
               </Button>
               <Button
                 variant="default"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 z-1000 cursor-pointer"
                 onClick={() => handleIgnore(index)}
               >
                 <ImageDownIcon /> Ignore
