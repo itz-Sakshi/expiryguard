@@ -12,8 +12,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body>
-        <AuroraBackground>
-          <BackgroundLines>
+        <AuroraBackground className="z-1">
+          <BackgroundLines className="z-1">
             <Navbar />
             {children}
           </BackgroundLines>
