@@ -1,12 +1,10 @@
 import React from "react";
-import { BackgroundLines } from "@/components/ui/background-lines";
 import Link from "next/link";
  
 
 export default function Home() {
   return (
-    <div className="h-[40rem] w-full  bg-neutral-300 relative flex flex-col items-center justify-center antialiased">
-      <BackgroundLines className="flex items-center justify-center w-full flex-col px-4 bg-neutral-300">
+    <div className="min-h-screen flex items-center justify-center w-full flex-col">
       <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
         ExpiryGuard <br />
       </h2>
@@ -20,7 +18,7 @@ export default function Home() {
           Get Started
         </button>
         </Link>
-    </BackgroundLines>
+    
 
       </div>
       
